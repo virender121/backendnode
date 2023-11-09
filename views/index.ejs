@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet/style.css">   
+</head>
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <main class="font-space bg-[#F7FAFC]">
+    <h3><%=age %></h3>
+      <div class="container mx-auto flex flex-col justify-center items-center h-screen gap-14">
+        <!--title & paragraph-->
+        <div class="text-center">
+          <h1 class="text-[#2D3748] text-[40px] font-bold leading-normal mb-[5px]">Pricing  plans</h1>
+          <h2 class="text-[#2D3748] font-bold leading-normal">Every plan includes 30 day free trial</h2>
+        </div>
+        <!--link & options to select-->
+        <div class="flex justify-between items-center w-full border-b border-[#CBD5E0] pb-9">
+          <p class="text-[#4A5568] leading-normal">For more details on all our pricing visit <a href="" class="text-[#2B6CB0] underline">here</a></p>
+          <div class="flex space-x-14 items-center">
+            <div class="flex space-x-4 items-center">
+              <label for="Plan" class="text-black leading-normal">Plan</label>
+              <select name="" id="Plan" class="max-w-[98px] h-[26px] shrink-0 rounded-[100px] bg-[#cbd5e0] px-2 text-white leading-normal">
+                <option value="">Monthly</option>
+                <option value="">Annually</option>
+              </select>
+            </div>
+            <div class="flex space-x-4 items-center">
+              <label for="currency" class="text-black leading-normal">Select currency</label>
+              <select name="" id="currency" class="max-w-[98px] h-[26px] shrink-0 rounded-[100px] bg-[#cbd5e0] px-2 text-white leading-normal">
+                <option value="">$ USD</option>
+                <option value="">€ EUR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!--pricing table-->
+        <div class="grid grid-cols-3 w-full">
+          <div class="mx-auto shadow-[0px_4px_4px_0px_rgba(152,149,149,0.25)] bg-white flex flex-col space-y-[45px]">
+            <div class="p-7 flex flex-col">
+              <div class="flex justify-between items-center">
+                <span class="text-[#2D3748] text-3xl font-bold leading-normal">Hobby</span>
+                <div>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_77)"><path d="M6 19H18V9.157L12 3.703L6 9.157V19ZM19 21H5C4.73478 21 4.48043 20.8946 4.29289 20.7071C4.10536 20.5196 4 20.2652 4 20V11H1L11.327 1.612C11.5111 1.44448 11.7511 1.35164 12 1.35164C12.2489 1.35164 12.4889 1.44448 12.673 1.612L23 11H20V20C20 20.2652 19.8946 20.5196 19.7071 20.7071C19.5196 20.8946 19.2652 21 19 21ZM7.5 13H9.5C9.5 13.663 9.76339 14.2989 10.2322 14.7678C10.7011 15.2366 11.337 15.5 12 15.5C12.663 15.5 13.2989 15.2366 13.7678 14.7678C14.2366 14.2989 14.5 13.663 14.5 13H16.5C16.5 14.1935 16.0259 15.3381 15.182 16.182C14.3381 17.0259 13.1935 17.5 12 17.5C10.8065 17.5 9.66193 17.0259 8.81802 16.182C7.97411 15.3381 7.5 14.1935 7.5 13Z" fill="black"/></g><defs><clipPath id="clip0_1_77"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>
+                </div>
+              </div>
+              <h1 class="text-center text-black text-[50px] font-bold leading-normal my-9">$10.00</h1>
+              <p class="text-[#4A5568] leading-normal max-w-[302px] mb-11">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              <div class="flex flex-col px-9 space-y-[34px]">
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+              </div>
+            </div>
+            <button class="py-6 w-full bg-[#EDF2F7] text-[#2D3748] font-bold leading-normal hover:bg-[#EA0774] hover:text-[#F7FAFC] transition-colors duration-200 ease-in-out">Get started today</button>
+          </div>
+          <div class="mx-auto shadow-[0px_4px_4px_0px_rgba(152,149,149,0.25)] bg-white flex flex-col space-y-[45px]">
+            <div class="p-7 flex flex-col">
+              <div class="flex justify-between items-center">
+                <span class="text-[#2D3748] text-3xl font-bold leading-normal">Professional</span>
+                <div>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_24)"><path d="M14.121 10.48C13.9335 10.2925 13.6792 10.1872 13.414 10.1872C13.1488 10.1872 12.8945 10.2925 12.707 10.48L12 11.186C11.8155 11.377 11.5948 11.5294 11.3508 11.6342C11.1068 11.739 10.8444 11.7942 10.5788 11.7965C10.3132 11.7988 10.0499 11.7482 9.80409 11.6476C9.5583 11.5471 9.335 11.3986 9.14721 11.2108C8.95942 11.023 8.81092 10.7997 8.71036 10.5539C8.60979 10.3081 8.55919 10.0448 8.5615 9.7792C8.56381 9.51364 8.61898 9.2512 8.7238 9.00719C8.82861 8.76319 8.98098 8.5425 9.172 8.358L14.802 2.726C16.1349 2.42283 17.5295 2.5476 18.7874 3.08258C20.0454 3.61755 21.1026 4.5355 21.8089 5.7059C22.5151 6.87629 22.8344 8.23955 22.7213 9.60183C22.6082 10.9641 22.0686 12.2561 21.179 13.294L19.071 15.429L14.121 10.479V10.48ZM3.161 4.468C4.19576 3.43338 5.54922 2.77798 7.00256 2.60777C8.4559 2.43756 9.92418 2.76248 11.17 3.53L7.757 6.944C7.0178 7.68173 6.59643 8.6793 6.58294 9.72356C6.56944 10.7678 6.96489 11.776 7.68478 12.5325C8.40467 13.2891 9.39191 13.7342 10.4356 13.7725C11.4792 13.8109 12.4965 13.4396 13.27 12.738L13.414 12.601L17.657 16.843L13.414 21.086C13.0389 21.4609 12.5303 21.6716 12 21.6716C11.4697 21.6716 10.9611 21.4609 10.586 21.086L3.16 13.66C1.94113 12.441 1.25639 10.7878 1.25639 9.064C1.25639 7.34019 1.94113 5.68697 3.16 4.468H3.161Z" fill="#EA0774"/></g><defs> <clipPath id="clip0_1_24"> <rect width="24" height="24" fill="white"/></clipPath></defs></svg>
+                </div>
+              </div>
+              <h1 class="text-center text-black text-[50px] font-bold leading-normal my-9">$30.00</h1>
+              <p class="text-[#4A5568] leading-normal max-w-[302px] mb-11">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              <div class="flex flex-col px-9 space-y-[34px]">
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+              </div>
+            </div>
+            <button class="py-6 w-full bg-[#EA0774] text-[#F7FAFC] font-bold leading-normal">Get started today</button>
+          </div>
+          <div class="mx-auto shadow-[0px_4px_4px_0px_rgba(152,149,149,0.25)] bg-white flex flex-col space-y-[45px]">
+            <div class="p-7 flex flex-col">
+              <div class="flex justify-between items-center">
+                <span class="text-[#2D3748] text-3xl font-bold leading-normal">Business</span>
+                <div>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_74)"><path d="M21 20H23V22H1V20H3V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V20ZM19 20V4H5V20H19ZM8 11H11V13H8V11ZM8 7H11V9H8V7ZM8 15H11V17H8V15ZM13 15H16V17H13V15ZM13 11H16V13H13V11ZM13 7H16V9H13V7Z" fill="black"/></g><defs><clipPath id="clip0_1_74"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>
+                </div>
+              </div>
+              <h1 class="text-center text-black text-[50px] font-bold leading-normal my-9">$45.00</h1>
+              <p class="text-[#4A5568] leading-normal max-w-[302px] mb-11">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+              <div class="flex flex-col px-9 space-y-[34px]">
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+                <div class="flex items-center space-x-[25px]">
+                  <span class="w-[10px] h-[10px] bg-[#CBD5E0] rounded-full"></span>
+                  <h2 class="text-black font-bold leading-normal">It is a long established</h2>
+                </div>
+              </div>
+            </div>
+            <button class="py-6 w-full bg-[#EDF2F7] text-[#2D3748] font-bold leading-normal hover:bg-[#EA0774] hover:text-[#F7FAFC] transition-colors duration-200 ease-in-out">Get started today</button>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
